@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.red {
+  background: radial-gradient(#C90007, black);
+}
+
+.green {
+  background: radial-gradient(#147500, black);
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.f-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.j-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.a-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  width: 1080px;
+  margin: auto;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0e0e0e), to(#0f0f0f));
+  background: linear-gradient(#0e0e0e, #0f0f0f);
+  overflow: hidden;
+}
+
+main header {
+  position: relative;
+  height: 10rem;
+}
+
+main header .hdr-img {
+  position: absolute;
+  top: 25%;
+}
+
+main .left-piller {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 10vw;
+  background-color: black;
+}
+
+main .board {
+  margin-top: 5rem;
+  height: 40rem;
+  width: 100%;
+  position: relative;
+}
+
+main .board .image {
+  position: absolute;
+  width: 100%;
+}
+
+main .board .playground {
+  background-color: #147500;
+}
+
+main .board .playground img {
+  z-index: 0;
+}
+
+main .board .playground .go {
+  position: absolute;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 100%;
+  background-color: black;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+}
+
+main .board .playground .go h4 {
+  margin: 0;
+  padding: 0;
+  color: wheat;
+  font-size: 5rem;
+  pointer-events: none;
+}
+
+main .selected-num {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 10rem;
+  width: 10rem;
+  right: 103%;
+  background-color: #14141488;
+  -webkit-box-shadow: inset 0 0 1rem black;
+          box-shadow: inset 0 0 1rem black;
+}
+
+main .selected-num .pointer {
+  position: absolute;
+  left: 275%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-left: 2rem solid #131313;
+  border-top: 2rem solid transparent;
+  border-bottom: 2rem solid transparent;
+  border-right: 2rem solid transparent;
+}
+
+main .selected-num .bid-num {
+  height: 100%;
+  width: 100%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  font-weight: 800;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 4rem;
+  color: white;
+}
+
+main .selected-num .final-num {
+  height: 5rem;
+  width: 10rem;
+  background-color: #070707;
+  border: none;
+  border-radius: 30rem;
+  font-size: 2.75rem;
+  color: white;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+main .selected-num .final-num:focus {
+  -webkit-box-shadow: 0 0 10px black inset;
+          box-shadow: 0 0 10px black inset;
+}
+
+main .numberLine {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 10rem;
+  background-color: black;
+  padding: 1rem 1.25rem;
+}
+
+main .numberLine .numbers-btn {
+  height: 100%;
+}
+
+main .numberLine .numbers-btn button {
+  height: 100%;
+  margin-top: 0.25rem;
+  border: none;
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+main .numberLine .numbers-btn .selected {
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  border: 2px solid black;
+}
+
+main .numberLine .numbers-btn .set {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+main footer {
+  text-align: center;
+  margin-top: 2.5rem;
+  color: #424242;
+  letter-spacing: 0.1rem;
+}
+/*# sourceMappingURL=main.css.map */
