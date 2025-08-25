@@ -52,16 +52,6 @@ main {
   overflow: hidden;
 }
 
-main header {
-  position: relative;
-  height: 10rem;
-}
-
-main header .hdr-img {
-  position: absolute;
-  top: 25%;
-}
-
 main .left-piller {
   position: fixed;
   left: 0;

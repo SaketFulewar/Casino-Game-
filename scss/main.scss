@@ -41,17 +41,6 @@ main {
     background: linear-gradient(rgb(14, 14, 14), #0f0f0f);
     overflow: hidden;
 
-    header {
-        position: relative;
-        height: 10rem;
-        // background-color: #6f0fff;
-
-        .hdr-img {
-            position: absolute;
-            top: 25%;
-        }
-    }
-
     .left-piller {
         position: fixed;
         left: 0;
